@@ -1,0 +1,43 @@
+html {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav {
+    background-color: #f1f1f1;
+    overflow: hidden;
+
+    li {
+	float: left;
+
+        a {
+            display: block;
+	    color: #000;
+            padding: 8px 16px;
+	    text-decoration: none;
+        }
+    }
+}
+
+ul.nav li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+ul.nav ul {
+    display: none;
+}
+
+ul.nav ul li a {
+
+}
+
+.right {
+    float: right;
+}
