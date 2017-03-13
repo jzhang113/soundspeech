@@ -1,26 +1,53 @@
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="style.scss"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   
   <body>
-    <ul class="nav">
-      <li><a href="#home"> Home </a></li>
-      <li><a href="#app"> App </a></li>
-      <li><a href="#modules"> Modules </a></li>
+    <div id="navmenu">
+      <ul class="navbar">
+	<li><a href="#home"> Home </a></li>
+	<li><a href="#app"> App </a></li>
+	<li><a href="#modules"> Modules </a></li>
       
-      <li class="right"><a href="https://uirf.research.uiowa.edu"> UIRF </a></li>
-      <li class="right"><a href="https://clas.uiowa.edu/comsci"> Speech Pathology@Iowa </a></li>
-      <li class="right">
-	<a href=""> Language </a>
-	<ul>
-	  <li><a href=""> English </a></li>
-	  <li><a href=""> French </a></li>
-	  <li><a href=""> German </a></li>
-	  <li><a href=""> Korean </a></li>
-	  <li><a href=""> Chinese </a></li>
-	</ul>
-      </li>
-    </ul>
+	<div class="right">
+	  <li><a href="https://uirf.research.uiowa.edu"> UIRF </a></li>
+	  <li><a href="https://clas.uiowa.edu/comsci"> Speech Pathology@Iowa </a></li>
+	  <li>
+	    <a href="#">Languages</a>
+	    <ul>
+	      <li><a href="#english">English</a></li>
+	      <li><a href="#spanish">Spanish</a></li>
+	      <li><a href="#german">German</a></li>
+	      <li><a href="#korean">Korean</a></li>
+	      <li><a href="#chinese">Chinese</a></li>
+	    </ul>
+	  </li>
+	</div>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div id="background-img"></div>
+      <img src="logo.png" class="logo"></img>
+      <div>Stuff about Sounds of Speech</div>
+      <img src="ios-badge.svg" class="logo"></img>
+      <img src="google-play-badge.png" class="logo"></img>
+    </div>
+    <div class="modules">
+      <button>
+	English Module
+      </button>
+      <button>
+	Spanish Module
+      </button>
+      <button>
+	German Module
+      </button>
+      <button>
+	Anatomy Module
+      </button>
+    </div>
+    <div id="footer">
+    </div>
   </body>
 </html>
