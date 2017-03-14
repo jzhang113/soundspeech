@@ -6,6 +6,12 @@ html {
     font-size: 16px;
 }
 
+iframe {
+    height: 400px;
+    width: 100%;
+    overflow: scroll;
+}
+
 .navbar {
     list-style-type: none;
     float: left;
@@ -98,7 +104,7 @@ $top-height: 500px;
 }
 
 #background-img {
-    background-image: url('uiowa.jpeg');
+    background-image: url('resources/uiowa.jpeg');
     background-size: contain;
     opacity: .3;
     position: absolute;
