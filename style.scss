@@ -1,27 +1,32 @@
 $background-color: #ecf0f1;
 $primary-color: #4b77be;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
 iframe {
-    height: 400px;
+    height: calc(100% - 90px);
     width: 100%;
     overflow: scroll;
+    align: middle;
 }
 
 .navbar {
     list-style-type: none;
     float: left;
-    margin: 0;
-    padding: 0;
     width: 100%;
     background-color: $background-color;
 
     li {
 	float: left;
+        position: relative;
 
 	a {
             display: block;
@@ -30,10 +35,14 @@ iframe {
 	    text-decoration: none;
 
             &:hover {
-		background-color: $primary-color;;
+		background-color: $primary-color;
                 color: #fff;
 	    }
         }
+
+	ul li {
+            width: 100%;
+	}
 
 	&:hover > ul {
             display: block;
@@ -45,14 +54,22 @@ iframe {
 	list-style-type: none;
         background-color: $background-color;
         display: none;
+	width: 100%;
     }
+}
+
+$top-height: 500px;
+$content-height: 545px;
+$content-width: 715px;
+
+.module {
+    float: left;
 }
 
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    padding: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -62,10 +79,11 @@ iframe {
 
 .modal-content {
     background-color: $background-color;
-    //margin: auto;
-    padding: 20px;
+    padding: 10px;
+    margin: auto;
     border: 1px solid #888;
-    width: 80%;
+    width: $content-width;
+    height: $content-height;
 }
 
 .close {
@@ -81,26 +99,22 @@ iframe {
     }
 }
 
-$nav-height: 37px;
-$top-height: 500px;
-
 #navmenu {
     width: 100%;
-    height: $nav-height;
     position: absolute;
     z-index: 1;
 }
 
 #wrapper {
     position: relative;
-    top: $nav-height;
     height: $top-height;
 }
 
 #module-wrapper {
     position: relative;
-    top: $nav-height;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #background-img {
