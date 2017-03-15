@@ -1,7 +1,14 @@
-$(document).ready(function() {
-    recalc();
+var $contents;
+var defaultH;
+var defaultW;
 
+$(document).ready(function() {
+    $contents = $(".modal-content");
+    defaultH = $contents.height();
+    defaultW = $contents.width();
     var $modal;
+
+    recalc();
 
     $(".open").click(function() {
         $modal = $(this).siblings();
@@ -33,16 +40,25 @@ function recalc() {
     $("#wrapper").css("top", height);
     $("#module-wrapper").css("top", height);
 
-    $contents = $(".modal-content");
     var windowH = $(window).height();
-    var minH = $contents.css("height");
-console.log(windowH + " " + minH);
-    if (windowH < minH) {
-        $contents.css("height", wHeight - 42); // 20px padding + 20px margin + 2px border
+    var windowW = $(window).width();
+
+    if (windowH < defaultH + 42) {
+	$contents.css("height", windowH - 42); // 20px padding + 20px margin + 2px border
+	$contents.css("margin-top", 10);
+	$contents.css("margin-bottom", 10);
     } else {
-	var diff = windowH - minH - 22;
+	var diff = windowH - defaultH - 22;
         var margins = diff / 2;
+
+	$contents.css("height", defaultH);
 	$contents.css("margin-top", margins);
 	$contents.css("margin-bottom", margins);
+    }
+
+    if (windowW < defaultW + 42) {
+	$contents.css("width", windowW - 42); // 20px padding + 20px margin + 2px border
+    } else {
+	$contents.css("width", defaultW);
     }
 }

@@ -1,7 +1,21 @@
-#left {
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.left {
     float: left;
 }
 
-#right {
+.right {
     float: left;
 }

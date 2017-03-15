@@ -15,7 +15,6 @@ iframe {
     height: calc(100% - 90px);
     width: 100%;
     overflow: scroll;
-    align: middle;
 }
 
 .navbar {
@@ -59,11 +58,12 @@ iframe {
 }
 
 $top-height: 500px;
-$content-height: 545px;
-$content-width: 715px;
+$content-height: 570px;
+$content-width: 730px;
 
 .module {
     float: left;
+    padding: 10px;
 }
 
 .modal {
