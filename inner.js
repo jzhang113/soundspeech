@@ -14,8 +14,7 @@ function recalc() {
     if (windowH > containerH) {
 	var margin = (windowH - containerH) / 2;
 	
-	$container.css("margin-top", margin);
-	$container.css("margin-bottom", margin);
+	$container.css("margin", margin);
     } else {
 	$container.css("margin", 0);
     }
