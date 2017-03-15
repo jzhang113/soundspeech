@@ -1,6 +1,11 @@
+$background-image: url('../resources/images/uiowa.jpeg');
 $background-color: #ecf0f1;
 $primary-color: #4b77be;
 $darker-color: #2e5266;
+
+$top-height: 500px;
+$content-height: 570px;
+$content-width: 730px;
 
 * {
     margin: 0;
@@ -59,10 +64,6 @@ iframe {
     }
 }
 
-$top-height: 500px;
-$content-height: 570px;
-$content-width: 730px;
-
 .module {
     float: left;
     padding: 10px;
@@ -112,7 +113,8 @@ $content-width: 730px;
 }
 
 .main-text {
-    display: none;
+    margin: 20px;
+    padding: 20px;
 }
 
 .logo {
@@ -144,7 +146,7 @@ $content-width: 730px;
 }
 
 #background-img {
-    background-image: url('resources/uiowa.jpeg');
+    background-image: $background-image;
     background-size: contain;
     opacity: .3;
     position: absolute;
