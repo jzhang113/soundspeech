@@ -1,14 +1,16 @@
 $background-color: #ecf0f1;
 $primary-color: #4b77be;
+$darker-color: #2e5266;
 
 * {
     margin: 0;
     padding: 0;
 }
 
-html {
+body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    background-color: $background-color;
 }
 
 iframe {
@@ -74,7 +76,7 @@ $content-width: 730px;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .modal-content {
@@ -93,10 +95,34 @@ $content-width: 730px;
     font-weight: bold;
 
     &:hover {
-	color: #000;
+	color: $darker-color;
         text-decoration: none;
 	cursor: pointer;
     }
+}
+
+.open {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+
+    &:hover {
+	background-color: lighten($primary-color, 15%);
+    }
+}
+
+.main-text {
+    display: none;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+.right {
+    float: right;
 }
 
 #navmenu {
@@ -131,14 +157,4 @@ $content-width: 730px;
 
 #footer {
     
-}
-
-.logo {
-    display: block;
-    margin: auto;
-    width: 150px;
-}
-
-.right {
-    float: right;
 }
