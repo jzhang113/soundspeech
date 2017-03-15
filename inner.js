@@ -14,8 +14,12 @@ function recalc() {
     if (windowH > containerH) {
 	var margin = (windowH - containerH) / 2;
 	
-	$container.css("margin", margin);
+	$container.css("margin-top", margin);
+	$container.css("margin-bottom", margin);
+	$container.css("padding-left", margin);
+	$container.css("padding-right", margin);
     } else {
 	$container.css("margin", 0);
+	$container.css("padding", 0);
     }
 }
