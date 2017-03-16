@@ -1,10 +1,55 @@
-<document>
+<names>
+  <menu>
+    <button href="#">
+      Startseite
+    </button>
+    <button href="#app">
+      App
+    </button>
+    <button href="#modules">
+      Module
+    </button>
+  </menu>
+  <language>
+    <button href="#english">
+      英文
+    </button>
+    <button href="#spanish">
+      西班牙语
+    </button>
+    <button href="#german">
+      德语
+    </button>
+    <button href="#korean">
+      韩国
+    </button>
+    <button href="#chinese">
+      中文
+    </button>
+  </language>
   <title>
-    Chinese Title
+    语言的声音
   </title>
   <content>
     This is some chinese text
     This is some chinese text
     This is some chinese text
   </content>
-</document>
+  <modules>
+    <button>
+      English Module
+    </button>
+    <button>
+      Spanish Module
+    </button>
+    <button>
+      German Module
+    </button>
+    <button>
+      Anatomy Module
+    </button>
+  </modules>
+  <footer>
+    &#x24B8; 2017 The University of Iowa
+  </footer>
+</names>

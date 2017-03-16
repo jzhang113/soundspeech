@@ -1,10 +1,55 @@
-<document>
+<names>
+  <menu>
+    <button href="#">
+      Home
+    </button>
+    <button href="#app">
+      App
+    </button>
+    <button href="#modules">
+      Modules
+    </button>
+  </menu>
+  <language>
+    <button href="#english">
+      영어
+    </button>
+    <button href="#spanish">
+      스페인 사람
+    </button>
+    <button href="#german">
+      독일 사람
+    </button>
+    <button href="#korean">
+      한국어
+    </button>
+    <button href="#chinese">
+      중국말
+    </button>
+  </language>
   <title>
-    Korean Title
+    연설의 소리
   </title>
   <content>
     This is some korean text
     This is some korean text
     This is some korean text
   </content>
-</document>
+  <modules>
+    <button>
+      English Module
+    </button>
+    <button>
+      Spanish Module
+    </button>
+    <button>
+      German Module
+    </button>
+    <button>
+      Anatomy Module
+    </button>
+  </modules>
+  <footer>
+    &#x24B8; 2017 The University of Iowa
+  </footer>
+</names>
