@@ -9,6 +9,11 @@ $(document).ready(function() {
     var $modal;
 
     recalc();
+    loadText($(location).attr("href").split("#")[1]);
+
+    $(".lang").click(function(e) {
+	    loadText($(e.target).text().toLowerCase());
+    });
 
     $(".open").click(function() {
         $modal = $(this).siblings();
@@ -39,6 +44,7 @@ function recalc() {
     $("#navmenu").css("height", height);
     $("#wrapper").css("top", height);
     $("#module-wrapper").css("top", height);
+    $("#footer").css("top", height);
 
     var windowH = $(window).height();
     var windowW = $(window).width();
@@ -61,4 +67,21 @@ function recalc() {
     } else {
 	$contents.css("width", defaultW);
     }
+}
+
+function loadText(lang) {
+    $.ajax({url: "resources/translation/" + lang + ".xml",
+	    dataType: "xml",
+	    success: function(xml) {
+		$title = $(xml).find("title");
+		$content = $(xml).find("content");
+		$footer = $(xml).find("footer");
+		$langNames = $(xml).find("language");
+		console.log($langNames);
+
+		$("#main-title").html($title.text());
+		$("#main-text").html($content.text());
+		$("#footer-text").html($footer.text());
+	    }
+    });
 }

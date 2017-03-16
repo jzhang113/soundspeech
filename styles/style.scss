@@ -106,25 +106,33 @@ iframe {
     border: none;
     font-size: 14px;
     padding: 10px;
+    background-color: $background-color;
 
     &:hover {
 	background-color: lighten($primary-color, 15%);
     }
 }
 
-.main-text {
-    margin: 20px;
-    padding: 20px;
-}
-
 .logo {
     display: block;
     margin: auto;
+    padding: 10px;
     width: 150px;
 }
 
 .right {
     float: right;
+}
+
+#main-title {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+#main-text {
+    margin: 0 20px;
+    padding: 20px;
+    white-space: pre;
 }
 
 #navmenu {
@@ -135,7 +143,7 @@ iframe {
 
 #wrapper {
     position: relative;
-    height: $top-height;
+    height: 100%;
 }
 
 #module-wrapper {
@@ -158,5 +166,7 @@ iframe {
 }
 
 #footer {
-    
+    position: relative;
+    color: $background-color;
+    background-color: $darker-color;
 }

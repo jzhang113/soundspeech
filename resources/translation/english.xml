@@ -1,0 +1,59 @@
+<names>
+  <menu>
+    <button href="#">
+    </button>
+    <button href="#app">
+    </button>
+    <button href="#modules">
+    </button>
+  </menu>
+  <language>
+    <english>
+      English
+    </english>
+    <spanish>
+      Spanish
+    </spanish>
+    <german>
+      German
+    </german>
+    <korean>
+      Korean
+    </korean>
+    <chinese>
+      Chinese
+    </chinese>
+  </language>
+  <menu>
+    <home>
+      Home
+    </home>
+    <app>
+      App
+    </app>
+    <modules>
+      Modules
+    </modules>
+  </menu>
+  <title>
+    Sounds of Speech
+  </title>
+  <content>
+    This is some english text
+    This is some english text
+    This is some english text
+  </content>
+  <modules>
+    <english>
+    </english>
+    <spanish>
+    </spanish>
+    <german>
+    </german>
+    <anatomy>
+    </anatomy>
+  </modules>
+  <footer>
+    &#x24B8; 2017 The University of Iowa
+  </footer>
+</names>
