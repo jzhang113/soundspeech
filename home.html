@@ -6,55 +6,88 @@
   </head>
   
   <body>
+    <div id="header">
+      <ul class="navbar" style="display: initial">
+	<div id="menuRight">
+	  <li class="lang"><a href="#english">English</a></li>
+	  <li class="lang"><a href="#spanish">Spanish</a></li>
+	  <li class="lang"><a href="#german">German</a></li>
+	  <li class="lang"><a href="#korean">Korean</a></li>
+	  <li class="lang"><a href="#chinese">Chinese</a></li>
+	</div>
+      </ul>
+    </div>
     <div id="navmenu">
       <ul class="navbar">
-	<div id="menuLeft">
-	  <li><a href="#">Home</a></li>
-	  <li><a href="#app">App</a></li>
-	  <li><a href="#modules">Modules</a></li>
+	<div id = "menuLeft">
+	  <li><a href="#about">About</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#press">Press</a></li>
 	</div>
-      
-	<div class="right">
-	  <li><a href="https://uirf.research.uiowa.edu"> UIRF </a></li>
-	  <li><a href="https://clas.uiowa.edu/comsci"> Speech Pathology@Iowa </a></li>
-	  <li>
-	    <a href="#">Languages</a>
-	    <ul>
-	      <li class="lang"><a href="#english">English</a></li>
-	      <li class="lang"><a href="#spanish">Spanish</a></li>
-	      <li class="lang"><a href="#german">German</a></li>
-	      <li class="lang"><a href="#korean">Korean</a></li>
-	      <li class="lang"><a href="#chinese">Chinese</a></li>
-	    </ul>
-	  </li>
+	
+	<Div style="float: right">
+	  <li><a href="https://uirf.research.uiowa.edu"><i>UIRF</i></a></li>
+	  <li><a href="https://clas.uiowa.edu/comsci"><i>Speech Pathology@Iowa</i></a></li>
 	</div>
       </ul>
     </div>
 
     <div id="wrapper">
       <div id="background-img"></div>
-      <img src="resources/images/logo.png" class="logo"></img>
 
-      <h1 id="main-title">Sounds of Speech</h1>
-      <div id="main-text">
-	This is some english text
-	This is some english text
-        This is some english text
+      <img src="resources/images/logo.png" class="main-logo"></img>
+
+      <div id="phone-img">
+	<img src="resources/images/phone.jpg"></img>
       </div>
 
-      <a href="https://itunes.apple.com/us/app/sounds-of-speech/id780656219?mt=8">
-	<img src="resources/images/ios-badge.svg" class="logo"></img>
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=edu.uiowa.uirf.soundsofspeech">
-	<img src="resources/images/google-play-badge.png" class="logo"></img>
-      </a>
+      <div class="textbox" id="title">
+	<h1 id="main-title">Sounds of Speech</h1>
+	<h2 id="subtitle" style="font-style: italic">#1 phonetics website</h2>
+      </div>
     </div>
-
+    <div id="text-wrapper">
+      <div class="textbox">
+	<p id="main-text">This is some english text
+	  This is some english text
+          This is some english text
+	</p>
+      </div>
+      
+      <div style="overflow: auto">
+	<a href="https://itunes.apple.com/us/app/sounds-of-speech/id780656219?mt=8">
+	  <img src="resources/images/ios-badge.svg" class="app-logo"></img>
+	</a>
+	<a href="https://play.google.com/store/apps/details?id=edu.uiowa.uirf.soundsofspeech">
+	  <img src="resources/images/google-play-badge.png" class="app-logo"></img>
+	</a>
+      </div>
+    </div>
+    
     <a name="modules"></a>
+
+    <div id="anatomy-wrapper">
+      <div class="module">
+	<button class="open">
+	  <img id="anatomy-img" src="resources/images/anatomy.jpg"></img>
+	</button>
+	<div class="modal">
+	  <div class="modal-content">
+	    <div class="close">&times;</div>
+	    <iframe src="resources/anatomy/anatomy.html"></iframe>
+	  </div>
+	</div>
+      </div>
+      <div>
+	<h1>Anatomy</h1>
+	<i>View Anatomy terms and visuals of placements</o>
+      </div>
+    </div>
+    
     <div id="module-wrapper">
       <div class="module">
 	<button class="open">
-	  <img src="resources/images/logo.png"></img>
+	  <img class="module-logo" src="resources/images/logo.png"></img>
 	  <p>English Module</p>
 	</button>
 	<div class="modal">
@@ -67,7 +100,7 @@
 
       <div class="module">
 	<button class="open">
-	  <img src="resources/images/logo.png"></img>
+	  <img class="module-logo" src="resources/images/logo.png"></img>
 	  <p>Spanish Module</p>
 	</button>
 	<div class="modal">
@@ -80,7 +113,7 @@
 
       <div class="module">
 	<button class="open">
-	  <img src="resources/images/logo.png"></img>
+	  <img class="module-logo" src="resources/images/logo.png"></img>
 	  <p>German Module</p>
 	</button>
 	<div class="modal">
@@ -91,17 +124,8 @@
 	</div>
       </div>
 
-      <div class="module">
-	<button class="open">
-	  <img src="resources/images/logo.png"></img>
-	  <p>Anatomy Module</p>
-	</button>
-	<div class="modal">
-	  <div class="modal-content">
-	    <div class="close">&times;</div>
-	    <iframe src="resources/anatomy/anatomy.html"></iframe>
-	  </div>
-	</div>
+      <div>
+	<b>The #1 phonetics website is available in English, Spanish, and German.</b>
       </div>
     </div>
 
@@ -111,7 +135,7 @@
 	</img>
       </a>
       <div id="footer-text">
-	&#x24B8; 2017 The University of Iowa
+	&#X24b8; 2017 The University of Iowa
       </div>
     </div>
   </body>

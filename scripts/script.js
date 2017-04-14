@@ -12,12 +12,17 @@ $(document).ready(function() {
     loadText($(location).attr("href").split("#")[1]);
 
     $(".lang > a").click(function(e) {
-	    loadText($(e.target).attr("href").substring(1).toLowerCase());
+        loadText($(e.target).attr("href").substring(1).toLowerCase());
     });
 
-    $(".open").click(function() {
+    $(".module-button").click(function() {
         $modal = $(this).siblings();
 	$modal.css("display", "block");
+    });
+
+    $(".anatomy-button").click(function() {
+        $modal = $(this).siblings();
+        $modal.css("display", "block");
     });
 
     $(".close").click(function() {
@@ -40,9 +45,14 @@ $(document).ready(function() {
 });
 
 function recalc() {
-    var height = $(".navbar").height();
+    var heightTop = $("#header > .navbar").height();
+    $("#header").css("height", heightTop);
+    
+    var height = $("#navmenu > .navbar").height();
     $("#navmenu").css("height", height);
     $("#wrapper").css("top", height);
+    $("#text-wrapper").css("top", height);
+    $("#anatomy-wrapper").css("top", height);
     $("#module-wrapper").css("top", height);
     $("#footer").css("top", height);
 
@@ -75,24 +85,25 @@ function loadText(lang) {
 	    success: function(content) {
 		$xml = $(content);
 		$title = $xml.find("title");
+		$subtitle = $xml.find("subtitle");
 		$content = $xml.find("content");
 		$footer = $xml.find("footer");
 
-		$("#main-title").html($title.text());
-		$("#main-text").html($content.text());
-		$("#footer-text").html($footer.text());
-
+		$("#main-title").html($title.text().trim());
+		$("#subtitle").html($subtitle.text().trim());
+ 		$("#main-text").html($content.text().trim());
+ 		$("#footer-text").html($footer.text().trim());
+		
 		$menuButtons = $("#menuLeft > li").children();
 		$menuNames = $xml.find("menu");
 		$menuNames.children().each(function(index, value) {
 		    var $button = $($menuButtons[index]);
 		    var $name = $(value);
 
-		    $button.attr("href", $name.attr("href"));
 		    $button.html($name.text());
 		});
 
-		$langButtons = $(".right .lang").children();
+		$langButtons = $(".lang").children();
 		$langNames = $xml.find("language");
 		$langNames.children().each(function(index, value) {
 		    var $button = $($langButtons[index]);
@@ -106,7 +117,7 @@ function loadText(lang) {
 		$moduleNames = $xml.find("modules");
 		$moduleNames.children().each(function(index, value) {
 		    $($moduleText[index]).html($(value).text());
-		});
+ 		});
 	    }
     });
 }

@@ -16,10 +16,7 @@ function recalc() {
 	
 	$container.css("margin-top", margin);
 	$container.css("margin-bottom", margin);
-	$container.css("padding-left", margin);
-	$container.css("padding-right", margin);
     } else {
 	$container.css("margin", 0);
-	$container.css("padding", 0);
     }
 }
