@@ -85,8 +85,6 @@ iframe {
   padding: 20px;
   background-color: #FFFFFF;
   height: 100%; }
-  .open:hover, .module-button:hover, .anatomy-button:hover {
-    background-color: #07829A; }
 
 .module-button {
   background-color: #9FBF3A; }
@@ -97,6 +95,8 @@ iframe {
   max-width: 100%;
   height: 100%;
   padding: 0; }
+  .anatomy-button:hover {
+    background-color: #d9d9d9; }
 
 .menu {
   float: left;
@@ -106,7 +106,8 @@ iframe {
 
 .centered {
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 .logo, .main-logo, .app-logo, .module-logo {
   display: block;
@@ -126,7 +127,8 @@ iframe {
   padding-bottom: 30px; }
 
 .module-logo {
-  width: 50px; }
+  width: 50px;
+  filter: grayscale(100%); }
 
 .textbox {
   padding: 20px;
@@ -172,7 +174,7 @@ iframe {
 
 #background-img {
   background-image: url("../resources/images/uiowa.jpeg");
-  background-size: contain;
+  background-size: 100%;
   opacity: .4;
   position: absolute;
   top: 0px;
@@ -201,7 +203,7 @@ iframe {
 #module-wrapper {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   background-color: #9FBF3A;
   margin: 40px 0 20px 0; }

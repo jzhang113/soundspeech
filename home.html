@@ -1,5 +1,7 @@
 <!DOCTYPE html>
   <head>
+    <meta charset="UTF-8">
+
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
@@ -19,15 +21,15 @@
     </div>
     <div id="navmenu">
       <ul class="navbar">
-	<div id = "menuLeft">
+	<div class="menu">
 	  <li><a href="#about">About</a></li>
 	  <li><a href="#news">News</a></li>
 	  <li><a href="#press">Press</a></li>
 	</div>
 	
-	<Div style="float: right">
-	  <li><a href="https://uirf.research.uiowa.edu"><i>UIRF</i></a></li>
+	<div class="menu">
 	  <li><a href="https://clas.uiowa.edu/comsci"><i>Speech Pathology@Iowa</i></a></li>
+	  <li><a href="https://uirf.research.uiowa.edu"><i>UIRF</i></a></li>
 	</div>
       </ul>
     </div>
@@ -67,26 +69,26 @@
     <a name="modules"></a>
 
     <div id="anatomy-wrapper">
-      <div class="module">
-	<button class="open">
+      <div class="module" style="max-width: 50%">
+	<button class="anatomy-button">
 	  <img id="anatomy-img" src="resources/images/anatomy.jpg"></img>
 	</button>
 	<div class="modal">
 	  <div class="modal-content">
 	    <div class="close">&times;</div>
-	    <iframe src="resources/anatomy/anatomy.html"></iframe>
+	    <iframe src="resources/anatomy/Anatomy.swf"></iframe>
 	  </div>
 	</div>
       </div>
-      <div>
+      <div class="centered">
 	<h1>Anatomy</h1>
-	<i>View Anatomy terms and visuals of placements</o>
+	<i>View Anatomy terms and visuals of placements</i>
       </div>
     </div>
     
     <div id="module-wrapper">
       <div class="module">
-	<button class="open">
+	<button class="module-button">
 	  <img class="module-logo" src="resources/images/logo.png"></img>
 	  <p>English Module</p>
 	</button>
@@ -99,7 +101,7 @@
       </div>
 
       <div class="module">
-	<button class="open">
+	<button class="module-button">
 	  <img class="module-logo" src="resources/images/logo.png"></img>
 	  <p>Spanish Module</p>
 	</button>
@@ -112,7 +114,7 @@
       </div>
 
       <div class="module">
-	<button class="open">
+	<button class="module-button">
 	  <img class="module-logo" src="resources/images/logo.png"></img>
 	  <p>German Module</p>
 	</button>
@@ -124,7 +126,7 @@
 	</div>
       </div>
 
-      <div>
+      <div class="centered" style="max-width: 25%">
 	<b>The #1 phonetics website is available in English, Spanish, and German.</b>
       </div>
     </div>

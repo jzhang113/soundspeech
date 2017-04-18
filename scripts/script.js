@@ -20,6 +20,13 @@ $(document).ready(function() {
 	$modal.css("display", "block");
     });
 
+    $(".module-button").hover(function() {
+	$(this).children().css("filter", "grayscale(0%)");
+    },
+    function() {
+	$(this).children().css("filter", "grayscale(100%)");
+    });
+
     $(".anatomy-button").click(function() {
         $modal = $(this).siblings();
         $modal.css("display", "block");
