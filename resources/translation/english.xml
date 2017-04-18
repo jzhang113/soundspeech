@@ -1,55 +1,37 @@
 <names>
   <menu>
-    <button href="#">
-      Home
-    </button>
-    <button href="#app">
-      App
-    </button>
-    <button href="#modules">
-      Modules
-    </button>
+    <button>Home</button>
+    <button>App</button>
+    <button>Modules</button>
   </menu>
+
   <language>
-    <button href="#english">
-      English
-    </button>
-    <button href="#spanish">
-      Spanish
-    </button>
-    <button href="#german">
-      German
-    </button>
-    <button href="#korean">
-      Korean
-    </button>
-    <button href="#chinese">
-      Chinese
-    </button>
+    <button>English</button>
+    <button>Spanish</button>
+    <button>German</button>
+    <button>Korean</button>
+    <button>Chinese</button>
   </language>
-  <title>
-    Sounds of Speech
-  </title>
+
+  <title>Sounds of Speech</title>
+  <subtitle>#1 phonetics website</subtitle>
+
   <content>
-    This is some english text
-    This is some english text
-    This is some english text
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </content>
+
+  <anatomy>
+    <name>Anatomy</name>
+    <description>View Anatomy terms and visuals of placements</description>
+  </anatomy>
+
   <modules>
-    <button>
-      English Module
-    </button>
-    <button>
-      Spanish Module
-    </button>
-    <button>
-      German Module
-    </button>
-    <button>
-      Anatomy Module
-    </button>
+    <button>English Module</button>
+    <button>Spanish Module</button>
+    <button>German Module</button>
+    <description>
+      The #1 phonetics website is available in English, Spanish, and German.
+    </description>
   </modules>
-  <footer>
-    &#x24B8; 2017 The University of Iowa
-  </footer>
+  <footer>&#x24B8; 2017 The University of Iowa</footer>
 </names>

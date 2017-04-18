@@ -101,30 +101,35 @@ function loadText(lang) {
  		$("#main-text").html($content.text().trim());
  		$("#footer-text").html($footer.text().trim());
 		
-		$menuButtons = $("#menuLeft > li").children();
+		$menuButtons = $(".menu > li").children();
 		$menuNames = $xml.find("menu");
 		$menuNames.children().each(function(index, value) {
 		    var $button = $($menuButtons[index]);
-		    var $name = $(value);
-
-		    $button.html($name.text());
+		    $button.html($(value).text());
 		});
 
 		$langButtons = $(".lang").children();
 		$langNames = $xml.find("language");
 		$langNames.children().each(function(index, value) {
 		    var $button = $($langButtons[index]);
-		    var $name = $(value);
-
-		    $button.attr("href", $name.attr("href"));
-		    $button.html($name.text());
+		    $button.html($(value).text());
 		});
 
-		$moduleText = $(".open > p");
+		$anatomyText = $("#anatomy-wrapper > .centered");
+		$anatomyNames = $xml.find("anatomy");
+		$anatomyTitle = $anatomyNames.find("name");
+		$anatomySubtitle = $anatomyNames.find("description");
+		$anatomyText.find("h1").html($anatomyTitle.text());
+		$anatomyText.find("i").html($anatomySubtitle.text());
+
+		$moduleText = $(".module-button > p");
 		$moduleNames = $xml.find("modules");
 		$moduleNames.children().each(function(index, value) {
 		    $($moduleText[index]).html($(value).text());
  		});
+
+		$description = $moduleNames.find("description");
+		$("#module-text").html($description.text());
 	    }
     });
 }

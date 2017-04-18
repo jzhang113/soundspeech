@@ -257,6 +257,7 @@ iframe {
     right: 10%;
     top: -10%;
     z-index: 1;
+    height: 400px;
 }
 
 #anatomy-img {
@@ -274,10 +275,18 @@ iframe {
 #module-wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: $green-color;
-    margin: $spacing + 20px 0 $spacing 0;
+    margin: $spacing 0 $spacing 0;
+}
+
+#module-text {
+    @extend .centered;
+    max-width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 #footer {
