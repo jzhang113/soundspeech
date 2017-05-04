@@ -1,56 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html Frameset DTD>
   <head>
     <meta charset="UTF-8">
 
-    <title>Phonetics: The Sounds of American English</title>
+    <title>Phonetics:  The sounds of American English</title>
     <link rel="stylesheet" type="text/css" href="../../styles/embed.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../scripts/inner.js"></script>
   </head>
 
-  <body>
-    <div class="outer">
-      <div class="left">
-	<object width="530" height="440"
-		type="application/x-shockwave-flash"
-		data="english_main.swf">
-	  <param name="movie" value="english_main.swf">
-	  <param name="loop" value="false">
-	  <param name="quality" value="high">
-	  <param name="scale" value="noborder">
-	  <param name="salign" value="LT">
-	  <param name="bgcolor" value="#999999">
-	</object>
-      </div>
-	
-      <div class="right">
-	<div>
-	  <object width="165" height="85"
-		  type="application/x-shockwave-flash"
-		  data="LIBRARYTopRight.swf">
-	    <param name="movie" value="LIBRARYTopRight.swf">
-	    <param name="loop" value="false">
-	    <param name="quality" value="high">
-	    <param name="scale" value="noborder">
-	    <param name="salign" value="LT">
-	    <param name="bgcolor" value="#999999">
-	  </object>
-	</div>
-	
-	<div>
-	  <object width="165" height="350"
-		  type="application/x-shockwave-flash"
-		  data="lowRight.swf">
-	    <param name="movie" value="lowRight.swf">
-	    <param name="loop" value="false">
-	    <param name="quality" value="high">
-	    <param name="scale" value="noborder">
-	    <param name="salign" value="LT">
-	    <param name="bgcolor" value="#999999">
-	  </object>
-	</div>
-      </div>
-    </div>
-  </body>
-</html>
+  <frameset cols="530,1*" rows="*" border=" 0" framespacing=" 0" frameborder="NO" bordercolor="#CCCCCC" class="outer"> 
+    <frame src="english_main.html" name="leftframe" marginwidth="0" marginheight="0" frameborder="NO" scrolling="NO" class="left">
 
+    <frameset rows="86,1*" cols="*" frameborder="NO" class="right"> 
+      <frame name="topRightFrame" marginwidth="0" marginheight="0" frameborder="NO" scrolling="NO" src="topRight.htm">
+      <frame src="rightFrame.htm" name="rightFrame" frameborder="NO" scrolling="NO" marginwidth="0" marginheight="0">
+    </frameset>
+  </frameset>
+</html>
