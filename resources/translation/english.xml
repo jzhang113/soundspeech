@@ -8,16 +8,35 @@
   <language>
     <button>English</button>
     <button>Spanish</button>
-    <button>German</button>
     <button>Korean</button>
-    <button>Chinese</button>
+    <button>Chinese (simplified)</button>
+    <button>Chinese (traditional)</button>
   </language>
 
   <title>Sounds of Speech</title>
   <subtitle>#1 phonetics website</subtitle>
 
   <content>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <description>
+      Sounds of Speech™ provides a comprehensive understanding of how each of the speech sounds of American English is formed. It includes animations, videos, and audio samples that describe the essential features of each of the consonants and vowels of American English. Sounds of Speech™ is especially useful for students studying English as a second language. Features include:
+    </description>
+    <features>
+      <item>
+	A real-time animated articulatory diagram for each consonant and vowel
+      </item>
+      <item>
+	An annotated step-by-step description of how each speech sound is produced
+      </item>
+      <item>
+	Facial view video (not available for Android 2.2 and 2.3) and audio samples for each speech sound
+      </item>
+      <item>
+	Navigation that reflects the classification of consonants by manner, place or voicing and of vowels by tongue position
+      </item>
+      <item>
+	Ability to see and hear native speakers pronounce sound for each consonant and vowel
+      </item>
+    </features>
   </content>
 
   <anatomy>
@@ -30,7 +49,7 @@
     <button>Spanish Module</button>
     <button>German Module</button>
     <description>
-      The #1 phonetics website is available in English, Spanish, and German.
+      The #1 phonetics website is now an app on your mobile device (English version only)!
     </description>
   </modules>
   <footer>&#x24B8; 2017 The University of Iowa</footer>

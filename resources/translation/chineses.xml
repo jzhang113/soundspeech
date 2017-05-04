@@ -1,0 +1,58 @@
+<names>
+  <menu>
+    <button>Home</button>
+    <button>App</button>
+    <button>Modules</button>
+  </menu>
+
+  <language>
+    <button>英文</button>
+    <button>西班牙语</button>
+    <button>德语</button>
+    <button>Chinese (simplified)</button>
+    <button>Chinese (traditional)</button>
+  </language>
+
+  <title>演讲声音</title>
+  <subtitle>#1演讲声音网站</subtitle>
+
+  <content>
+    <description>
+      "演讲声音"讲述了美英语的每一个声音如何形成。它包括描述美国英语每个辅音和元音的基本特征的动画，视频和音频样本。"演讲声音"对于学习英语作为第二语言的学生特别有用。
+
+功能包括：
+    </description>
+    <features>
+      <item>
+	每个辅音和元音的实时动画发音图
+      </item>
+      <item>
+	一个有关如何产生每个辅音和元音的分步说明
+      </item>
+      <item>
+	面部观看视频（不适用于Android 2.2和2.3）和每个辅音和元音的音频样本
+      </item>
+      <item>
+	按类型，生产地点和振动查看辅音。 通过舌头位置查看元音。
+      </item>
+      <item>
+	看到和听到母语者产生每个辅音和元音
+      </item>
+    </features>
+  </content>
+
+  <anatomy>
+    <name>Anatomy</name>
+    <description>View Anatomy terms and visuals of placements</description>
+  </anatomy>
+
+  <modules>
+    <button>English Module</button>
+    <button>Spanish Module</button>
+    <button>German Module</button>
+    <description>
+      #1演讲声音网站
+    </description>
+  </modules>
+  <footer>&#x24B8; 2017 The University of Iowa</footer>
+</names>

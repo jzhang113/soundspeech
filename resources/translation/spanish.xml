@@ -1,53 +1,56 @@
 <names>
   <menu>
-    <button href="#">
-      Inicio
-    </button>
-    <button href="#app">
-      App
-    </button>
-    <button href="#modules">
-      Módulos
-    </button>
+    <button>Inicio</button>
+    <button>App</button>
+    <button>Módulos</button>
   </menu>
+
   <language>
-    <button href="#english">
-      Inglés
-    </button>
-    <button href="#spanish">
-      Español
-    </button>
-    <button href="#german">
-      Alemán
-    </button>
-    <button href="#korean">
-      Coreano
-    </button>
-    <button href="#chinese">
-      Chino
-    </button>
+    <button>Inglés</button>
+    <button>Español</button>
+    <button>Coreano</button>
+    <button>Chinese (simplified)</button>
+    <button>Chinese (traditional)</button>
   </language>
-  <title>
-    Los Sonidos del Español
-  </title>
+
+  <title>Sounds of Speech™ (Sonidos de hablar)</title>
+  <subtitle>El sitio web #1 de fonética</subtitle>
+  
   <content>
-    This is some spanish text
-    This is some spanish text
-    This is some spanish text
+    <description>
+      Sounds of Speech™ proporciona un conocimiento compresivo de cómo se forma cada sonido del inglés americano e incluye animaciones, videos y muestras de audio que describen las características esenciales de cada una de las consonantes y las vocales del inglés americano. Sounds of Speech™ es especialmente útil para los estudiantes que estudian inglés como segundo idioma. Las características incluyen
+    </description>
+    <features>
+      <item>
+	Un diagrama animado de articulación en tiempo real para cada consonante y vocal
+      </item>
+      <item>
+	Una descripción anotada paso a paso de cómo se produce cada sonido
+      </item>
+      <item>
+	Videos faciales  (no disponible para Android 2.2 y 2.3) y  muestras de audio para cada sonido de voz
+      </item>
+      <item>
+	Navegación que refleja la clasificación de las consonantes por modo, lugar, sonorización y de las vocales por la posición de la lengua
+      </item>
+      <item>
+	Capacidad de ver y escuchar a hablantes nativos pronunciar el sonido de cada consonante y vocal
+      </item>
+    </features>
   </content>
+
+  <anatomy>
+    <name>Anatomía</name>
+    <description>View Anatomy terms and visuals of placements</description>
+  </anatomy>
+  
   <modules>
-    <button>
-      Módulo en Inglés
-    </button>
-    <button>
-      Módulo en Español
-    </button>
-    <button>
-      Módulo en Alemán
-    </button>
-    <button>
-      Módulo de Anatomía
-    </button>
+    <button>Módulo en Inglés</button>
+    <button>Módulo en Español</button>
+    <button>Módulo en Alemán</button>
+    <description>
+      ¡El sitio web ya está disponible en su dispositivo móvil (versión solo en inglés)!
+    </description>
   </modules>
   <footer>
     &#x24B8; 2017 The University of Iowa

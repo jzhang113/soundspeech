@@ -1,0 +1,58 @@
+<names>
+  <menu>
+    <button>Home</button>
+    <button>App</button>
+    <button>Modules</button>
+  </menu>
+
+  <language>
+    <button>English</button>
+    <button>Spanish</button>
+    <button>Korean</button>
+    <button>Chinese (simplified)</button>
+    <button>Chinese (traditional)</button>
+  </language>
+
+  <title>演講聲音</title>
+  <subtitle>#1演講聲音網站</subtitle>
+
+  <content>
+    <description>
+      "演講聲音"講述了美英語的每一個聲音如何形成。它包括描述美國英語每個輔音和元音的基本特徵的動畫，視頻和音頻樣本。"演講聲音"對於學習英語作為第二語言的學生特別有用。
+
+功能包括：
+    </description>
+    <features>
+      <item>
+	每個輔音和元音的實時動畫發音圖
+      </item>
+      <item>
+	一個有關如何產生每個輔音和元音的分步說明
+      </item>
+      <item>
+	面部觀看視頻（不適用於Android 2.2和2.3）和每個輔音和元音的音頻樣本
+      </item>
+      <item>
+	按類型，生產地點和振動查看輔音。 通過舌頭位置查看元音。
+      </item>
+      <item>
+	看到和聽到母語者產生每個輔音和元音
+      </item>
+    </features>
+  </content>
+
+  <anatomy>
+    <name>Anatomy</name>
+    <description>View Anatomy terms and visuals of placements</description>
+  </anatomy>
+
+  <modules>
+    <button>English Module</button>
+    <button>Spanish Module</button>
+    <button>German Module</button>
+    <description>
+      #1演講聲音網站
+    </description>
+  </modules>
+  <footer>&#x24B8; 2017 The University of Iowa</footer>
+</names>

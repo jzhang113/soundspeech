@@ -1,55 +1,57 @@
 <names>
   <menu>
-    <button href="#">
-      Home
-    </button>
-    <button href="#app">
-      App
-    </button>
-    <button href="#modules">
-      Modules
-    </button>
+    <button>Home</button>
+    <button>App</button>
+    <button>Modules</button>
   </menu>
+
   <language>
-    <button href="#english">
-      영어
-    </button>
-    <button href="#spanish">
-      스페인 사람
-    </button>
-    <button href="#german">
-      독일 사람
-    </button>
-    <button href="#korean">
-      한국어
-    </button>
-    <button href="#chinese">
-      중국말
-    </button>
+    <button>영어</button>
+    <button>스페인 사람</button>
+    <button>한국어</button>
+    <button>Chinese (simplified)</button>
+    <button>Chinese (traditional)</button>
   </language>
-  <title>
-    연설의 소리
-  </title>
+
+  <title>음성</title>
+  <subtitle>#1 음성학 웹사이트</subtitle>
+
   <content>
-    This is some korean text
-    This is some korean text
-    This is some korean text
+    <description>
+      Sounds of Speech™ 프로그램은 미국식 영어의 각 음성이 어떻게 생성되는지 포괄적으로 이해할 수 있게 도와줍니다. 미국 영어의 자음, 모음이 가지는 특징을 설명한 애니메이션, 비디오, 오디오 자료가 들어있습니다. Sounds of Speech™ 프로그램은 영어가 모국어가 아닌 학생들에게 특히 유용합니다.
+이 프로그램이 제공하는 기능은
+    </description>
+    <features>
+      <item>
+	모든 자음, 모음의 발성 원리를 설명하는 실시간 애니메이션
+      </item>
+      <item>
+	각 음성이 발성되는 과정을 단계별로 묘사한 설명
+      </item>
+      <item>
+	각 음성의 오디오 샘플 및 발성시 안면의 움직임을 보여주는 비디오 (이 기능은 Android 2.2, 2.3에서는 지원되지 않습니다)
+      </item>
+      <item>
+	자음을 발성원리, 발성위치, 유성음 발생여부로 분류한 탐색 시스템, 모음을 혀의 위치별로 분류한 탐색 시스템
+      </item>
+      <item>
+	각 자음과 모음의 영어 사용자 발음을 보고 들을 수 있는 기능
+      </item>
+    </features>
   </content>
+
+  <anatomy>
+    <name>Anatomy</name>
+    <description>View Anatomy terms and visuals of placements</description>
+  </anatomy>
+
   <modules>
-    <button>
-      English Module
-    </button>
-    <button>
-      Spanish Module
-    </button>
-    <button>
-      German Module
-    </button>
-    <button>
-      Anatomy Module
-    </button>
+    <button>English Module</button>
+    <button>Spanish Module</button>
+    <button>German Module</button>
+    <description>
+      #1 음성학 웹사이트가 모바일 앱으로 출시되었습니다! (영어 버전)
+    </description>
   </modules>
-  <footer>
-    &#x24B8; 2017 The University of Iowa
-  </footer>
+  <footer>&#x24B8; 2017 The University of Iowa</footer>
 </names>

@@ -87,6 +87,9 @@ function recalc() {
 }
 
 function loadText(lang) {
+    if (lang !== "english" && lang !== "spanish" && lang !== "korean" && lang !== "chineses" && lang !== "chineset")
+	lang = "english";
+    
     $.ajax({url: "resources/translation/" + lang + ".xml",
 	    dataType: "xml",
 	    success: function(content) {
@@ -98,9 +101,14 @@ function loadText(lang) {
 
 		$("#main-title").html($title.text().trim());
 		$("#subtitle").html($subtitle.text().trim());
- 		$("#main-text").html($content.text().trim());
  		$("#footer-text").html($footer.text().trim());
-		
+
+ 		$("#main-text").html($content.find("description").text().trim());
+		$featureList = $("#features").empty();
+		$content.find("features").children().each(function(index, value) {
+			$featureList.append($("<li>").append($(value).text().trim()));
+		});
+
 		$menuButtons = $(".menu > li").children();
 		$menuNames = $xml.find("menu");
 		$menuNames.children().each(function(index, value) {
