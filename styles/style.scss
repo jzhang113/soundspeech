@@ -1,312 +1,251 @@
-$background-image: url('../resources/images/uiowa.jpeg');
-
-$light-color: #FFFFFF;
-$dark-color: #404042;
-$primary-color: #07829A;
-$green-color: #9FBF3A;
-$red-color: #ED7863;
-$top-color: #B8E2E3;
-
-$top-height: 500px;
-$content-height: 570px;
-$content-width: 730px;
-$spacing: 20px;
-
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: $light-color;
-}
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #FFFFFF; }
 
 iframe {
-    height: calc(100% - 90px);
-    width: 100%;
-    overflow: scroll;
-}
+  height: calc(100% - 90px);
+  width: 100%;
+  overflow: scroll; }
 
 .navbar {
-    list-style-type: none;
-    float: left;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  list-style-type: none;
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
 
-    li {
-	float: left;
-        position: relative;
+.navbar li {
+  float: left;
+  position: relative; }
 
-	a {
-            display: block;
-	    color: $light-color;
-            padding: 8px 16px;
-	    text-decoration: none;
+.navbar li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  text-decoration: none; }
 
-            &:hover {
-		background-color: $primary-color;
-                color: #fff;
-	    }
-        }
+.navbar li a:hover {
+  background-color: #07829A;
+  color: #fff; }
 
-	ul li {
-            width: 100%;
-	}
+.navbar li ul li {
+  width: 100%; }
 
-	&:hover > ul {
-            display: block;
-	    position: absolute;
-        }
-    }
+.navbar li:hover > ul {
+  display: block;
+  position: absolute; }
 
-    ul {
-	list-style-type: none;
-        background-color: $light-color;
-        display: none;
-	width: 100%;
-    }
-}
+.navbar ul {
+  list-style-type: none;
+  background-color: #FFFFFF;
+  display: none;
+  width: 100%; }
 
 .lang {
-    background-color: lighten($dark-color, 15%);
-    margin: 5px;
-    font-size: 10px;
-    border: 1px solid $dark-color;
-}
+  background-color: #666669;
+  margin: 5px;
+  font-size: 10px;
+  border: 1px solid #404042; }
 
 .module {
-    float: left;
-  //padding: 0 $spacing;
-    max-width: 25%;
-    min-height: 200px;
-}
+  float: left;
+  max-width: 25%;
+  min-height: 200px; }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-}
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .modal-content {
-    background-color: $light-color;
-    padding: 10px;
-    margin: auto;
-    border: 1px solid #888;
-    width: $content-width;
-    height: $content-height;
-}
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid #888;
+  width: 730px;
+  height: 570px; }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
 
-    &:hover {
-	color: $dark-color;
-        text-decoration: none;
-	cursor: pointer;
-    }
-}
+.close:hover {
+  color: #404042;
+  text-decoration: none;
+  cursor: pointer; }
 
-.open {
-    border: none;
-    font-size: 14px;
-    padding: $spacing;
-    background-color: $light-color;
-    height: 100%;
-    cursor: pointer;
-}
+.open, .module-button, .anatomy-button {
+  border: none;
+  font-size: 14px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  height: 100%;
+  cursor: pointer; }
 
 .module-button {
-    @extend .open;
-    background-color: $green-color;
+  background-color: #9FBF3A; }
 
-    &:hover {
-	background-color: darken($green-color, 15%);
-    }
-}
+.module-button:hover {
+  background-color: #6e8428; }
 
 .anatomy-button {
-    @extend .open;
-    max-width: 100%;
-    height: 100%;
-    padding: 0;
+  max-width: 100%;
+  height: 100%;
+  padding: 0; }
 
-    &:hover {
-	background-color: darken($light-color, 15%);
-    }
-}
-
+.anatomy-button:hover {
+  background-color: #d9d9d9; }
 
 .menu {
-    float: left;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-}
+  float: left;
+  width: 40%;
+  display: flex;
+  justify-content: space-around; }
 
-.centered {
-    margin: auto;
-    text-align: center;
-    padding: $spacing;
-}
+.centered, #module-text {
+  margin: auto;
+  text-align: center;
+  padding: 20px; }
 
-.logo {
-    display: block;
-    margin: auto;
-    padding: 10px;
-    width: 150px;    
-}
+.logo, .main-logo, .app-logo, .module-logo {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 150px; }
 
 .main-logo {
-    @extend .logo;
-    width: 100px;
-    position: relative;
-    top: -75px;
-    z-index: 1;
-}
+  width: 100px;
+  position: relative;
+  top: -75px;
+  z-index: 1; }
 
 .app-logo {
-    @extend .logo;
-    float: left;
-    width: 200px;
-    padding-bottom: 30px;
-}
+  float: left;
+  width: 200px;
+  padding-bottom: 30px; }
 
 .module-logo {
-    @extend .logo;
-    width: 50px;
-    //margin-top: -55px;
-    filter: grayscale(100%);
-}
+  width: 50px;
+  filter: grayscale(100%); }
 
 .textbox {
-    padding: 20px;
-    white-space: pre-line;
-    color: $light-color;
-}
+  padding: 20px;
+  white-space: pre-line;
+  color: #FFFFFF; }
 
 #header {
-    background-color: $top-color;
-    display: block;
-}
+  background-color: #B8E2E3;
+  display: block; }
 
 #navmenu {
-    width: 100%;
-    position: absolute;
-    background-color: $dark-color;
-    z-index: 1;
-}
+  width: 100%;
+  position: absolute;
+  background-color: #404042;
+  z-index: 1; }
 
 #menuRight {
-    float: right;
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
+  float: right;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; }
 
 #wrapper {
-    position: relative;
-    height: 300px;
-    margin-bottom: $spacing;
-}
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px; }
 
 #title {
-    display: inline-block;
-    position: relative;
-    //top: 0%;
-    padding-right: 80px;
-    background-color: #000;
-    opacity: .6;
-}
+  display: inline-block;
+  position: relative;
+  padding-right: 80px;
+  background-color: #000;
+  opacity: .6; }
 
 #text-wrapper {
-    position: relative;
-    background-color: $primary-color;
-    margin-bottom: $spacing;
-}
+  position: relative;
+  background-color: #07829A;
+  margin-bottom: 20px; }
 
 #main-text {
-    width: 60%;
-}
+  width: 60%; }
 
 #background-img {
-    background-image: $background-image;
-    background-size: 100%;
-    opacity: .4;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
+  background-image: url("../resources/images/uiowa.jpeg");
+  background-size: 100%;
+  opacity: .4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%; }
 
 #phone-img {
-    float: right;
-    position: relative;
-    right: 10%;
-    top: -10%;
-    z-index: 1;
-    height: 400px;
-}
+  float: right;
+  position: relative;
+  right: 10%;
+  top: -10%;
+  z-index: 1;
+  height: 400px; }
 
 #phone-size {
-    position: absolute;
-    height: 296px;
-    width: 168px;
-    right: 30px;
-    top: 52px;
-    z-index: 2;
-}
+  position: absolute;
+  height: 296px;
+  width: 168px;
+  right: 30px;
+  top: 52px;
+  z-index: 2; }
+
+#features {
+  margin: 0 40px; }
 
 #anatomy-img {
-    width: 100%;
-}
+  width: 100%; }
 
 #anatomy-wrapper {
-    position: relative;
-    background-color: $red-color;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
-    margin: $spacing 0;
-}
+  position: relative;
+  background-color: #ED7863;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  margin: 20px 0; }
 
 #module-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: $green-color;
-    margin: $spacing 0;
-}
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #9FBF3A;
+  margin: 20px 0; }
 
 #module-text {
-    @extend .centered;
-    max-width: 25%;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
+  max-width: 25%;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
 
 #footer {
-    position: relative;
-    color: $light-color;
-    background-color: $top-color;
-    padding: $spacing;
-}
+  position: relative;
+  color: #FFFFFF;
+  background-color: #B8E2E3;
+  padding: 20px; }
 
 #footer-text {
-    color: $dark-color;
-}
+  color: #404042; }
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.scss.map */
